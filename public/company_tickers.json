@@ -1,1 +1,157 @@
- 
+{
+    "0": {
+      "cik_str": 320193,
+      "ticker": "AAPL",
+      "title": "Apple Inc."
+    },
+    "1": {
+      "cik_str": 789019,
+      "ticker": "MSFT",
+      "title": "Microsoft Corp"
+    },
+    "2": {
+      "cik_str": 1652044,
+      "ticker": "GOOGL",
+      "title": "Alphabet Inc."
+    },
+    "3": {
+      "cik_str": 1018724,
+      "ticker": "AMZN",
+      "title": "Amazon.com Inc"
+    },
+    "4": {
+      "cik_str": 1045810,
+      "ticker": "NVDA",
+      "title": "NVIDIA Corp"
+    },
+    "5": {
+      "cik_str": 1326801,
+      "ticker": "META",
+      "title": "Meta Platforms Inc"
+    },
+    "6": {
+      "cik_str": 200406,
+      "ticker": "BAC",
+      "title": "Bank of America Corp"
+    },
+    "7": {
+      "cik_str": 70858,
+      "ticker": "JPM",
+      "title": "JPMorgan Chase & Co"
+    },
+    "8": {
+      "cik_str": 1067983,
+      "ticker": "BRK.B",
+      "title": "Berkshire Hathaway Inc"
+    },
+    "9": {
+      "cik_str": 29534,
+      "ticker": "WFC",
+      "title": "Wells Fargo & Co"
+    },
+    "10": {
+      "cik_str": 1318605,
+      "ticker": "TSLA",
+      "title": "Tesla Inc"
+    },
+    "11": {
+      "cik_str": 91142,
+      "ticker": "UNH",
+      "title": "UnitedHealth Group Inc"
+    },
+    "12": {
+      "cik_str": 59478,
+      "ticker": "HD",
+      "title": "Home Depot Inc"
+    },
+    "13": {
+      "cik_str": 826083,
+      "ticker": "JNJ",
+      "title": "Johnson & Johnson"
+    },
+    "14": {
+      "cik_str": 78003,
+      "ticker": "PG",
+      "title": "Procter & Gamble Co"
+    },
+    "15": {
+      "cik_str": 927653,
+      "ticker": "V",
+      "title": "Visa Inc"
+    },
+    "16": {
+      "cik_str": 21344,
+      "ticker": "XOM",
+      "title": "Exxon Mobil Corp"
+    },
+    "17": {
+      "cik_str": 1065280,
+      "ticker": "NFLX",
+      "title": "Netflix Inc"
+    },
+    "18": {
+      "cik_str": 1744489,
+      "ticker": "ADBE",
+      "title": "Adobe Inc"
+    },
+    "19": {
+      "cik_str": 64803,
+      "ticker": "MCD",
+      "title": "McDonald's Corp"
+    },
+    "20": {
+      "cik_str": 1750,
+      "ticker": "CAT",
+      "title": "Caterpillar Inc"
+    },
+    "21": {
+      "cik_str": 1551152,
+      "ticker": "DIS",
+      "title": "Walt Disney Co"
+    },
+    "22": {
+      "cik_str": 72903,
+      "ticker": "GS",
+      "title": "Goldman Sachs Group Inc"
+    },
+    "23": {
+      "cik_str": 1067701,
+      "ticker": "INTC",
+      "title": "Intel Corp"
+    },
+    "24": {
+      "cik_str": 4447,
+      "ticker": "IBM",
+      "title": "International Business Machines Corp"
+    },
+    "25": {
+      "cik_str": 797468,
+      "ticker": "CRM",
+      "title": "Salesforce Inc"
+    },
+    "26": {
+      "cik_str": 310522,
+      "ticker": "BA",
+      "title": "Boeing Co"
+    },
+    "27": {
+      "cik_str": 1341439,
+      "ticker": "TXN",
+      "title": "Texas Instruments Inc"
+    },
+    "28": {
+      "cik_str": 1103982,
+      "ticker": "PFE",
+      "title": "Pfizer Inc"
+    },
+    "29": {
+      "cik_str": 1467373,
+      "ticker": "KO",
+      "title": "Coca-Cola Co"
+    },
+    "30": {
+      "cik_str": 718998,
+      "ticker": "MRK",
+      "title": "Merck & Co Inc"
+    }
+  }
