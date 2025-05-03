@@ -56,20 +56,12 @@ export const searchCompaniesByTicker = async (ticker: string): Promise<CompanyIn
     // Determine if we're in development or production environment
     const isDevelopment = import.meta.env.DEV;
     
-    // Use direct SEC URL in production, proxy in development
+    // In development, use the proxy, in production use the locally bundled file
     const tickersUrl = isDevelopment 
       ? '/api/sec/files/company_tickers.json'
-      : 'https://www.sec.gov/files/company_tickers.json';
+      : '/company_tickers.json'; // This file is placed in the public directory
     
-    // Add cache-busting parameter to prevent caching issues (SEC sometimes requires this)
-    const urlWithCacheBusting = `${tickersUrl}${tickersUrl.includes('?') ? '&' : '?'}_cb=${Date.now()}`;
-    
-    const response = await fetch(urlWithCacheBusting, {
-      headers: {
-        'Accept': 'application/json',
-        'User-Agent': 'SEC-Filings-Sankey-Visualizer/0.1.0 (educational project, neonarain@gmail.com)'
-      }
-    });
+    const response = await fetch(tickersUrl);
     
     if (!response.ok) {
       throw new Error('Failed to fetch company tickers');
