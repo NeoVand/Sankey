@@ -6,15 +6,7 @@ import {
   Paper,
   Typography,
   Alert,
-  Button,
-  Divider,
-  TableContainer,
-  Table,
-  TableHead,
-  TableRow,
-  TableCell,
-  TableBody
-} from '@mui/material';
+  Button} from '@mui/material';
 import { 
   AccountBalance as BalanceSheetIcon,
   TrendingUp as IncomeStatementIcon,
@@ -35,7 +27,6 @@ import {
 } from '../../services/transformers/sankeyTransformers';
 import { LoadingSpinner } from '../common/LoadingSpinner';
 import { FormSelector, FormType, FilingPeriod } from '../data-display/FormSelector';
-import { FilingFilter } from '../../services/api/financialsApi';
 
 // Import store for form type
 import { useCompanyStore } from '../../store/companyStore';

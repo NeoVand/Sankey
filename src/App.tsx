@@ -5,11 +5,9 @@ import {
   AppBar, 
   Toolbar, 
   Paper,
-  Grid,
   CssBaseline,
   Button,
   Chip,
-  Divider,
   IconButton,
   Tooltip,
   Link
@@ -31,7 +29,6 @@ import { DarkModeToggle } from './components/common/DarkModeToggle';
 
 // Components
 import { CompanySearch } from './components/company-search/CompanySearch';
-import { CompanyInfo } from './components/company-search/CompanyInfo';
 import { FinancialTabs } from './components/data-display/FinancialTabs';
 import { FormSelector, FormType, FilingPeriod } from './components/data-display/FormSelector';
 
@@ -49,11 +46,9 @@ function App() {
   // Company store state
   const { 
     selectedCompany,
-    companyFilings,
     incomeStatement,
     balanceSheet,
     cashFlowStatement,
-    isLoadingCompany,
     isLoadingFinancials,
     companyError,
     financialsError,

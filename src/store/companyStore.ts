@@ -12,14 +12,6 @@ import {
 import { FilingFilter } from '../services/api/financialsApi';
 import { FormType, FilingPeriod } from '../components/data-display/FormSelector';
 
-interface Filing {
-  accessionNumber: string;
-  filingDate: string;
-  reportDate: string;
-  form: string;
-  primaryDocument: string;
-  primaryDocUrl: string;
-}
 
 interface CompanyState {
   // Selected company info
