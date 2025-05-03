@@ -73,6 +73,26 @@ npm run dev
 yarn dev
 ```
 
+## Deployment
+
+This project is configured for automatic deployment to GitHub Pages.
+
+### Automatic Deployment
+
+Push to the `main` branch or manually trigger the workflow in GitHub Actions:
+
+1. Any push to the `main` branch automatically triggers a build and deploy
+2. You can also manually trigger the deployment from the Actions tab in the repository
+
+### Manual Deployment
+
+You can also deploy manually from your local machine:
+
+```bash
+# Build and deploy to GitHub Pages
+npm run deploy
+```
+
 ## Usage
 
 1. **Search for a Company**: Enter a company ticker symbol (e.g., AAPL, MSFT, GOOGL) in the search bar

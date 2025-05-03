@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Sankey/', // GitHub Pages repository name
   plugins: [react()],
   resolve: {
     dedupe: ['react', 'react-dom']
@@ -26,5 +27,24 @@ export default defineConfig({
         secure: false
       }
     }
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'mui': ['@mui/material', '@mui/icons-material'],
+          'react-vendor': ['react', 'react-dom'],
+          'nivo': ['@nivo/sankey']
+        },
+        assetFileNames: (assetInfo) => {
+          return `assets/${assetInfo.name}`;
+        },
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js'
+      }
+    },
+    copyPublicDir: true
   }
 })
