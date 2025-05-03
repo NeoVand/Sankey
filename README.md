@@ -130,7 +130,21 @@ This project is currently in early development, but contributions are welcome. I
 
 ## Data Sources
 
-This application uses the SEC's EDGAR API to fetch financial data. All data is publicly available through the SEC's website. Please be aware of the SEC's [fair access](https://www.sec.gov/developer) rules when using this application.
+This application primarily uses the SEC's EDGAR API to fetch financial data. All data is publicly available through the SEC's website. Please be aware of the SEC's [fair access](https://www.sec.gov/developer) rules when using this application.
+
+### Company Data
+
+For the company search functionality, the application includes a static `company_tickers.json` file with information about top companies. This approach is used to avoid CORS issues when deployed to GitHub Pages. The file includes:
+
+- Basic information for 30+ major companies (Apple, Microsoft, Google, etc.)
+- CIK identifiers that link to SEC filing data
+- Ticker symbols and company names
+
+To update the company list in the future:
+1. Download the latest `company_tickers.json` from the SEC website
+2. Process it to ensure CORS compatibility
+3. Place it in the `public` directory
+4. Redeploy the application
 
 ## License
 
